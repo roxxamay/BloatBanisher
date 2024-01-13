@@ -27,7 +27,7 @@ EOF
 
 #Menu
 #
-while [[ "$OPTION" != 5 ]]; do
+while [[ "$OPTION" != 10 ]]; do
 
 
 
@@ -42,8 +42,11 @@ while [[ "$OPTION" != 5 ]]; do
  echo "2 - LIST ALL THE APPS INSTALLES"
  echo "3 - UNINSTALL FACEBOOK BLOAT"
  echo "4 - UNINSTALL GOOGLE BLOAT"
+ echo "5 - UNINSTALL MICROSOFT BLOAT"
+ echo "==========================================="
  read -p "CHOOSE AN OPTION : " OPTION
- echo
+ echo 
+ echo "==========================================="
 
  case $OPTION in
     1)
@@ -112,5 +115,17 @@ while [[ "$OPTION" != 5 ]]; do
      #rvx is the project of >>> https://github.com/NoName-exe
      #microg is the project of >>> https://github.com/inotia00
     ;;
+    #MICROSOFT BLOAT
+    5)
+     echo "uninstalling MICROSOFT bloat"
+     adb uninstall --user 0 com.microsoft.office.outlook   # microsoft outlook
+     adb uninstall --user 0 com.microsoft.office.word   # microsoft word
+     adb uninstall --user 0 com.microsoft.office.eccel   # microsoft excel
+     adb uninstall --user 0 com.microsoft.office.powerpoint   #microsoft powerpoint
+     adb uninstall --user 0 com.microsoft.skydrive    # microsoft onedrive
+     adb uninstall --user 0 com.skype.raider  # microsoft onedrive
+     adb uninstall --user 0 com.linkedin.android   #linkedin
+     echo
+     echo "IF YOU WANT ANY OF THE MICROSOFT APPS YOU CAN INSTALL IT FROM PLAYSTORE"
  esac
 done
