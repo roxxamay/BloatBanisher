@@ -1,9 +1,8 @@
 #!/bin/bash
 
-#Menu
-#
-while [[ "$OPTION" != 5 ]]; do
 
+#intro
+#
 cat << "EOF"
  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.
 / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \
@@ -25,4 +24,48 @@ cat << "EOF"
 EOF
 
 
+
+#Menu
+#
+while [[ "$OPTION" != 5 ]]; do
+
+
+
+#menu
+#
+ echo
+ echo
+ echo "=========================================="
+ echo "    > > > > >SELECT AN OPTION < < < < <"
+ echo "=========================================="
+ echo "1 - LIST DEVICE CONNECTED "
+ echo "2 - LIST ALL THE APPS INSTALLES"
+ echo "3 - UNINSTALL FACEBOOK BLOAT"
+ echo "4 - UNINSTALL GOOGLE BLOAT"
+ read -p "CHOOSE AN OPTION : " OPTION
+ echo
+
+ case $OPTION in
+    1)
+     adb devices
+     ;;
+
+    2)
+     echo "All apps installed : "
+     adb shell cmd package list packages
+     ;;
+
+    3)
+     echo "Uninstalling FACEBOOK Bloat"
+     adb uninstall --user 0 com.facebook.katana #facebook app
+     adb uninstall --user 0 com.facebook.appmanager #facebook related services
+     adb uninstall --user 0 com.facebook.services #facebook related services
+     adb uninstall --user 0 com.facebook.system  #facebook related services
+     ;;
+
+    4)
+     echo "Uninstalling GOOGLE Bloat"
+     adb uninstall --user 0 com.
+     ;;
+ esac
 done
