@@ -43,6 +43,7 @@ while [[ "$OPTION" != 10 ]]; do
  echo "3 - UNINSTALL FACEBOOK BLOAT"
  echo "4 - UNINSTALL GOOGLE BLOAT"
  echo "5 - UNINSTALL MICROSOFT BLOAT"
+ echo "6 - UNINSTALL MOTOROLA BLOAT"
  echo "==========================================="
  read -p "CHOOSE AN OPTION : " OPTION
  echo 
@@ -127,5 +128,12 @@ while [[ "$OPTION" != 10 ]]; do
      adb uninstall --user 0 com.linkedin.android   #linkedin
      echo
      echo "IF YOU WANT ANY OF THE MICROSOFT APPS YOU CAN INSTALL IT FROM PLAYSTORE"
+     ;;
+
+    6)
+     adb unintsall --user 0 com.motorola.brapps
+     adb uninstall --user 0 com.motorola.ccc.notification    #hello apps
+     ;;
+
  esac
 done
