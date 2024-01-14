@@ -44,6 +44,7 @@ while [[ "$OPTION" != 10 ]]; do
  echo "4 - UNINSTALL GOOGLE BLOAT"
  echo "5 - UNINSTALL MICROSOFT BLOAT"
  echo "6 - UNINSTALL MOTOROLA BLOAT"
+ echo "7 - UNINSTALL SAMSUNG BLOAT"
  echo "==========================================="
  read -p "CHOOSE AN OPTION : " OPTION
  echo 
@@ -140,6 +141,51 @@ while [[ "$OPTION" != 10 ]]; do
      adb uninstall --user 0 com.motorola.gamemode
      adb uninstall --user 0 com.motorola.help 
      ;;
+
+
+    7)
+     adb uninstall --user 0 com.osp.app.signin   #samsung accont
+     adb uninstall --user 0 com.samsung.android.oneconnect   #smart things
+     adb uninstall --user 0 com.samsung.android.ststub   #smart things
+     adb uninstall --user 0 com.samsung.android.easysetup   #smart things
+     adb uninstall --user 0 com.samsung.android.beaconmanager #smarthings
+     adb uninstall --user 0 com.samsung.android.samsungpassautofill   #samsung pay auto fill
+     adb uninstall --user 0 com.samsung.android.samsungpass  # samsung pass
+     adb uninstall --user 0 com.samsung.android.scloud  # samsung cloud
+     adb uninstall --user 0 com.samsung.android.kidsinstaller
+     adb uninstall --user 0 com.samsung.android.spay    #samsung pay
+     adb uninstall --user 0 com.samsung.android.authfw  # samsung linkedin
+     adb uninstall --user 0 com.samsung.android.email.provider #samsung email
+     adb uninstall --user 0 com.samsung.android.mobileservice
+     adb uninstall --user 0 com.samsung.android.voc   #samsung member
+     adb uninstall --user 0 com.samsung.android.smartmirroring #smart view
+     #adb uninstall --user 0 com.samsung.android.rubin.app
+     #adb uninstall --user 0 com.samsung.android.messaging
+     adb uninstall --user 0 com.samsung.android.wellbeing   #samsung wellbeing
+     adb uninstall --user 0 com.samsung.android.apps.notes  #samsung notes
+     adb uninstall --user 0 com.sec.spp.push  #samsung push services
+     adb uninstall --user 0 com.sec.android.app.sbrowser  #samsung browser
+     adb uninstall --user 0 com.sec.android.app.billing  #samsung checkout
+     adb uninstall --user 0 com.sec.android.app.samsungapps # galaxy store
+     adb uninstall --user 0 com.sec.app.shealth #samsung health
+     adb uninstall --user 0 com.sec.android.app.voicenote # samsung voice recorder
+     adb uninstall --user 0 com.sec.android.app.myfiles   #my files
+     adb uninstall --user 0 com.sec.android.usermanual  # usermanual
+     adb uninstall --user 0 com.sec.android.dictionary  #dictonary
+     adb uninstall --user 0 com.sec.android.easyMover.Agent
+     adb uninstall --user 0 com.opera.max.oem   # samsung max vpn
+     adb uninstall --user 0 com.samsung.android.game.gamehome   # game launcher
+     adb unintsall --user 0 com.samsung.android.game.gametool    # game tools
+     adb uninstall --user 0 br.org,sidi.appbrasil
+     adb uninstall --user 0 de.axelspringer.yana.zeropage
+     adb uninstall --user 0 com.samsung.android.uds
+
+     echo
+     echo "you can download mostly app from apkmirror or you can enable it via adb"
+     echo
+     ;;
+
+
 
  esac
 done
