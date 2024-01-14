@@ -133,6 +133,12 @@ while [[ "$OPTION" != 10 ]]; do
     6)
      adb unintsall --user 0 com.motorola.brapps
      adb uninstall --user 0 com.motorola.ccc.notification    #hello apps
+     adb uninstall --user 0 com.motorola.android.fmradio     #fm radio
+     adb uninstall --user 0 com.motorola.fmplayer     #fm radio
+     adb uninstall --user 0 com.motorola.genie  #moto help
+     adb uninstall --user 0 com.motorola.moto   #moto
+     adb uninstall --user 0 com.motorola.gamemode
+     adb uninstall --user 0 com.motorola.help 
      ;;
 
  esac
