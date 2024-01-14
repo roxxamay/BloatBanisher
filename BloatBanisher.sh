@@ -27,7 +27,7 @@ EOF
 
 #Menu
 #
-while [[ "$OPTION" != 10 ]]; do
+while [[ "$OPTION" != 9 ]]; do
 
 
 
@@ -45,6 +45,8 @@ while [[ "$OPTION" != 10 ]]; do
  echo "5 - UNINSTALL MICROSOFT BLOAT"
  echo "6 - UNINSTALL MOTOROLA BLOAT"
  echo "7 - UNINSTALL SAMSUNG BLOAT"
+ echo "8 - UNINSTALL XIAOMI / MI / POCO BLOAT"
+ echo "9 - EXIT"
  echo "==========================================="
  read -p "CHOOSE AN OPTION : " OPTION
  echo 
@@ -132,6 +134,7 @@ while [[ "$OPTION" != 10 ]]; do
      ;;
 
     6)
+     echo "uninstalling  MOTOROLA bloat"
      adb unintsall --user 0 com.motorola.brapps
      adb uninstall --user 0 com.motorola.ccc.notification    #hello apps
      adb uninstall --user 0 com.motorola.android.fmradio     #fm radio
@@ -144,6 +147,7 @@ while [[ "$OPTION" != 10 ]]; do
 
 
     7)
+     echo "uninstalling SAMSUNG bloat"
      adb uninstall --user 0 com.osp.app.signin   #samsung accont
      adb uninstall --user 0 com.samsung.android.oneconnect   #smart things
      adb uninstall --user 0 com.samsung.android.ststub   #smart things
@@ -185,7 +189,90 @@ while [[ "$OPTION" != 10 ]]; do
      echo
      ;;
 
-
-
- esac
+    8)
+     echo "uninstalling Xiaomi Bloat"
+     adb uninstall --user 0 com.zhiliaopp.musically   #tiktok
+     adb uninstall --user 0 com.amazon.mp3  #amazon muscic
+     adb uninstall --user 0 com.amazon.mShop.android.shopping  #amazon shopping
+     adb uninstall --user 0 com.tencent.igxiaomi  #pubg gift
+     adb uninstall --user 0 com.netflix.mediaclient # netflix
+     adb uninstall --user 0 com.hk.ugc # 92
+     adb uninstall --user 0 cn.wps.moffice_eng # wps office
+     adb uninstall --user 0 com.alibaba.aliexpresshd # alliexpress
+     adb uninstall --user 0 com.block.puzzle.game.hippo.mi # block puzzle guardian
+     adb uninstall --user 0 com.jewelsblast.ivygames.Adventure.free # jewels blast
+     adb uninstall --user 0 com.logame.eliminateintruder3d # dust settle
+     adb uninstall --user 0 com.mintgames.triplecrush.tile.fun # tile fun
+     adb uninstall --user 0 com.sukhavati.gotoplaying.bubble.BubbleShooter.mint # bubble shooter      adb uninstall --user 0  com.twitter.android # twitter
+     adb uninstall --user 0 com.mi.global.pocostore # poco store
+     adb uninstall --user 0 cn.wps.xiaomi.abroad.lite # Mi documents viewer
+     adb uninstall --user 0 com.miui.android.fashiongallery # background carousel
+     adb uninstall --user 0 com.mi.global.pocobbs # poco community
+     adb uninstall --user 0 com.micredit.in # Mi credit
+     adb uninstall --user 0 om.duokan.phone.remotecontroller # Mi remote
+     adb uninstall --user 0 com.miui.mediaeditor # Mi Gallery editor
+     adb uninstall --user 0 com.miui.videoplayer # Mi video
+     adb uninstall --user 0 com.miui.player # Mi music player
+     adb uninstall --user 0 com.miui.screenrecorder
+     adb uninstall --user 0 com.miui.fm
+     adb uninstall --user 0 com.mi.liveassistant
+     adb uninstall --user 0 com.milink.service
+     adb uninstall --user 0 com.qiyi.video
+     adb uninstall --user 0 com.xiaomi.gamecenter.sdk.service
+     adb uninstall --user 0 com.xiaomi.payment
+     adb uninstall --user 0 com.android.browser
+     adb uninstall --user 0 com.miui.systemAdSolution
+     adb uninstall --user 0 com.baidu.input_mi
+     adb uninstall --user 0 com.xiaomi.ab
+     adb uninstall --user 0 com.xiaomi.jr
+     adb uninstall --user 0 com.baidu.duersdk.opensdk
+     adb uninstall --user 0 com.miui.hybrid
+     adb uninstall --user 0 com.baidu.searchbox
+     adb uninstall --user 0 com.mfashiongallery.emag
+     adb uninstall --user 0 com.miui.translation.kingsoft
+     adb uninstall --user 0 com.miui.virtualsim
+     adb uninstall --user 0 com.miui.compass
+     adb uninstall --user 0 com.miui.personalassistant
+     adb uninstall --user 0 com.miui.bugreport
+     adb uninstall --user 0 com.miui.translation.youdao
+     adb uninstall --user 0 com.xiaomi.channel
+     adb uninstall --user 0 com.mipay.wallet
+     adb uninstall --user 0 com.xiaomi.lens
+     adb uninstall --user 0 com.xiaomi.pass
+     adb uninstall --user 0 com.xiaomi.shop
+     adb uninstall --user 0 com.miui.klo.bugreport
+     adb uninstall --user 0 com.xiaomi.joyose
+     adb uninstall --user 0 com.miui.notes
+     adb uninstall --user 0 com.miui.video
+     adb uninstall --user 0 com.xiaomi.midrop
+     adb uninstall --user 0 com.miui.hybrid.accessory
+     adb uninstall --user 0 com.sohu.inputmethod.sogou.xiaomi
+     adb uninstall --user 0 com.xiaomi.o2o
+     adb uninstall --user 0 com.autonavi.minimap
+     adb uninstall --user 0 com.miui.daemon
+     adb uninstall --user 0 com.miui.contentcatcher
+     adb uninstall --user 0 com.miui.analytics
+     adb uninstall --user 0 com.xiaomi.vipaccount
+     adb uninstall --user 0 com.caf.fmradio
+     adb uninstall --user 0 com.miui.cloudservice
+     adb uninstall --user 0 com.miui.cloudservice.sysbase
+     adb uninstall --user 0 com.miui.cloudbackup
+     adb uninstall --user 0 com.miui.gallery
+     adb uninstall --user 0 com.miui.vsimcore
+     adb uninstall --user 0 com.xiaomi.miplay_client
+     #adb uninstall --user 0 com.xiaomi.account
+     adb uninstall --user 0 com.miui.msa.global # miui ADs server
+     adb uninstall --user 0 com.miui.micloudsync
+     adb uninstall --user 0 com.google.android.setupwizard
+     adb uninstall --user 0 com.android.printspooler
+     adb uninstall --user 0 com.xiaomi.upnp
+     adb uninstall --user 0 com.google.android.tts
+     adb uninstall --user 0 com.xiaomi.mipicks
+     adb uninstall --user 0 com.google.android.printservice.recommendation
+     adb uninstall --user 0 com.miui.yellowpage
+     adb uninstall --user 0 com.xiaomi.discover
+     adb uninstall --user 0 com.mipay.wallet.in
+     adb uninstall --user 0 com.miui.fmservice
+     ;;
+   esac
 done
