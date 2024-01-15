@@ -273,6 +273,30 @@ while [[ "$OPTION" != 9 ]]; do
      adb uninstall --user 0 com.xiaomi.discover
      adb uninstall --user 0 com.mipay.wallet.in
      adb uninstall --user 0 com.miui.fmservice
+     adb uninstall --user 0 com.miui.miwallpaper.earth
+     adb uninstall --user 0 com.miui.miwallpaper.geometry
+     adb uninstall --user 0 com.miui.miwallpaper.mars
+     adb uninstall --user 0 com.miui.miwallpaper.saturn
+     adb uninstall --user 0 com.miui.miwallpaper.snowmountain
+     adb uninstall --user 0 com.miui.extraphoto
+     adb uninstall --user 0 com.mi.globalbrowser
+     adb uninstall --user 0 com.miui.calculator
+     adb uninstall --user 0 com.miui.cleaner
+     adb uninstall --user 0 com.android.fileexplorer
+     adb uninstall --user 0 com.google.android.documentsui
+     adb uninstall --user 0 com.mi.health
+     adb uninstall --user 0 com.android.email
+     adb uninstall --user 0 com.xiaomi.mi_connect_service
+     adb uninstall --user 0 cn.wps.moffice_eng.xiaomi.lite
+     adb uninstall --user 0 com.miui.newmidrive
+     adb uninstall --user 0 com.miui.huanji
+     adb uninstall --user 0 com.android.soundrecorder
+     adb uninstall --user 0 com.miui.screenshot
+     adb uninstall --user 0 com.miui.securitycenter
+     adb uninstall --user 0 com.miui.miservice
+     adb uninstall --user 0 com.google.android.soundpicker
+     adb uninstall --user 0 com.android.thememanager
+     adb uninstall --user 0 com.xiaomi.scanner
      ;;
    esac
 done
