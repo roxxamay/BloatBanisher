@@ -84,6 +84,7 @@ while [[ "$OPTION" != 9 ]]; do
      adb uninstall --user 0 com.google.android.apps.docs.editors.sheets #google sheets
      adb uninstall --user 0 com.google.android.apps.docs.editors.sheets  #google slides
      adb uninstall --user 0 com.google.chrome   #google chrome
+     adb uninstall --user 0 com.android.chrome   #google chrome
      adb uninstall --user 0 com.google.android.gm    #google gmail
      adb uninstall --user 0 com.google.android.googlequicksearchbox   #google app
      adb uninstall --user 0 com.google.android.calendar    # google calendar
@@ -180,7 +181,7 @@ while [[ "$OPTION" != 9 ]]; do
      adb uninstall --user 0 com.opera.max.oem   # samsung max vpn
      adb uninstall --user 0 com.samsung.android.game.gamehome   # game launcher
      adb unintsall --user 0 com.samsung.android.game.gametool    # game tools
-     adb uninstall --user 0 br.org,sidi.appbrasil
+     adb uninstall --user 0 br.org.sidi.appbrasil
      adb uninstall --user 0 de.axelspringer.yana.zeropage
      adb uninstall --user 0 com.samsung.android.uds
 
@@ -260,7 +261,7 @@ while [[ "$OPTION" != 9 ]]; do
      adb uninstall --user 0 com.miui.gallery
      adb uninstall --user 0 com.miui.vsimcore
      adb uninstall --user 0 com.xiaomi.miplay_client
-     #adb uninstall --user 0 com.xiaomi.account
+     adb uninstall --user 0 com.xiaomi.account
      adb uninstall --user 0 com.miui.msa.global # miui ADs server
      adb uninstall --user 0 com.miui.micloudsync
      adb uninstall --user 0 com.google.android.setupwizard
@@ -292,11 +293,13 @@ while [[ "$OPTION" != 9 ]]; do
      adb uninstall --user 0 com.miui.huanji
      adb uninstall --user 0 com.android.soundrecorder
      adb uninstall --user 0 com.miui.screenshot
-     adb uninstall --user 0 com.miui.securitycenter
+     #adb uninstall --user 0 com.miui.securitycenter
      adb uninstall --user 0 com.miui.miservice
      adb uninstall --user 0 com.google.android.soundpicker
      adb uninstall --user 0 com.android.thememanager
      adb uninstall --user 0 com.xiaomi.scanner
+     adb uninstall --user 0 com.xiaomi.glgm
+     adb uninstall --user 0 com.miui.audiomonitor
      ;;
    esac
 done
